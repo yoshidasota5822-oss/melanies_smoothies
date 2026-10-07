@@ -28,8 +28,8 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 
 #pandasの追加
 pd_df = my_dataframe.to_pandas()
-st.dataframe(pd_df)
-st.stop()
+#st.dataframe(pd_df)
+#st.stop()
 
 #複数選択を可能にする
 ingredients_list = st.multiselect(
